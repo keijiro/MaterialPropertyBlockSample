@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cloner : MonoBehaviour
+public sealed class Cloner : MonoBehaviour
 {
     [SerializeField] GameObject _source = null;
     [SerializeField] int _count = 10;

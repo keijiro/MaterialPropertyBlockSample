@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class Blinker2 : MonoBehaviour
+public sealed class Blinker2 : MonoBehaviour
 {
+    static Color AnimatedColor
+      => Color.Lerp(Color.red, Color.blue, (Mathf.Sin(Time.time) + 1) / 2);
+
     MaterialPropertyBlock _block;
 
     void Start()
@@ -9,10 +12,7 @@ public class Blinker2 : MonoBehaviour
 
     void Update()
     {
-        var color = Color.Lerp(Color.red, Color.blue, (Mathf.Sin(Time.time) + 1) / 2);
-        _block.SetColor("_BaseColor", color);
-
-        var renderer = GetComponent<Renderer>();
-        renderer.SetPropertyBlock(_block);
+        _block.SetColor("_BaseColor", AnimatedColor);
+        GetComponent<Renderer>().SetPropertyBlock(_block);
     }
 }
