@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Test/Benchmark.unity
+    path: Assets/Scenes/Benchmark.unity
     guid: 2e16b6181faa84fc6ad33c88f7dbfe57
   - enabled: 1
-    path: Assets/Test/Blinker1.unity
+    path: Assets/Scenes/Blinker1.unity
     guid: 612609a7cb75a4634b8e53a282a2a664
   - enabled: 1
-    path: Assets/Test/Blinker2.unity
+    path: Assets/Scenes/Blinker2.unity
     guid: c26860662f2604d08872ef3bb7c2f9fa
   m_configObjects: {}
